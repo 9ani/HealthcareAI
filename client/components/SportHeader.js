@@ -49,7 +49,7 @@ const SportHeader = () => {
                         Питание
                     </button>
                     <button onClick={handleSportClick} className={buttonStyle}>
-                        Спорт
+                        Фитнес
                     </button>
                     <UserButton />
                 </SignedIn>
@@ -68,6 +68,9 @@ const SportHeader = () => {
                     </button>
                     <button onClick={handleSignUp} className={buttonStyle}>
                         Регистрация
+                    </button>
+                    <button onClick={handleSportClick} className={buttonStyle}>
+                        Фитнес
                     </button>
                 </SignedOut>
             </nav>
