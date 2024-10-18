@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik+Mono+One&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #28511D;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  background-color: #28511D;
+  height: 100%;
+  min-height: 110vh;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styling */
+.header-container {
+  background-color: white;
+  height: 80px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 50px;
+  position: fixed;
+  width: calc(100% - 100px);
+  top: 20px;
+  z-index: 1000;
+}
+
+.header-container.user {
+  background-color: #CEE422;
+}
+
+.header-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Rubik Mono One", monospace;
+  font-size: 20px;
+  color: #28511D;
+}
+/* .font-rubick{
+  font-family: "Rubik Mono One";
+  font-size: 20px;
+  color: #28511D;
+} */
+.font-rubick2{
+  font-family: "Rubik Mono One";
+  font-size: 20px;
+  color: #28511D;
+}
+
+
+
+.header-title a {
+  color: #28511D;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #28511D;
+  font-family: Inter, sans-serif;
+  font-size: 15.5px;
+}
+
+.header-nav1, .header-nav2 {
+  display: flex;
+  gap: 20px;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #28511D;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #1e3b16;
+}
+
+/* Main container styling */
+.mainContainer {
+  background-color: #28511D;
+  padding-top: 120px; /* Adjusted for fixed header */
+}
+
+.mainContainer.user {
+  background-color: #fff;
+}
+
+.gridContainer1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 750px;
+  margin-left: 150px;
+}
+
+.introContainer h2 {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 80px;
+  color: #CEE422;
+}
+
+.introContainer h4 {
+  color: #B5D620;
+  width: 70%;
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  font-family: Inter, sans-serif;
+  font-size: 16.5px;
+  height: 60px;
+}
+
+.inputContainer button {
+  border-radius: 10px;
+  background: #CEE422;
+  width: 50%;
+}
+
+/* Grid container styling */
+.gridContainer2 {
+  display: flex;
+  padding: 0 50px;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.gridContainer-item {
+  overflow-x: auto;
+  width: 50%;
+}
+
+.gridContainer-item h2 {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 40px;
+  color: #28511D;
+}
+
+/* Carousel styling */
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 40px;
+}
+
+.custom-slider .slick-list {
+  margin: 0 -10px;
+  padding: 20px 0 !important;
+}
+
+.custom-slider .slick-slide {
+  padding: 0 10px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.custom-slider .slick-current,
+.custom-slider .slick-center {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.custom-slider .slide-item {
+  font-weight: normal;
+  transition: font-weight 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+
+.custom-slider .active-slide {
+  font-weight: bold;
+}
+
+.custom-slider .today-slide {
+  border: 3px solid #CEE422;
+  box-shadow: 0 0 15px rgba(206, 228, 34, 0.7);
+  background-color: rgba(206, 228, 34, 0.1);
+  position: relative;
+}
+
+.custom-slider .today-slide::after {
+  content: "Сегодня";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #CEE422;
+  color: #28511D;
+  padding: 2px 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.custom-slider .today-slide .day-plan-card {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Day Plan Card styling */
+.dayPlanCard {
+  cursor: pointer;
+  border: 2px solid #28511D;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.cardContent {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.progressLabel {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.progressBarContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressBarContainer > div {
+  width: 90% !important;
+  height: 90% !important;
+}
+
+/* Slider arrow styling */
+.custom-slider .slick-prev,
+.custom-slider .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: #28511D;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.custom-slider .slick-prev:hover,
+.custom-slider .slick-next:hover {
+  background: #1e3a14;
+}
+
+.custom-slider .slick-prev:before,
+.custom-slider .slick-next:before {
+  font-size: 40px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+}
+
+.custom-slider .slick-prev {
+  left: -10px;
+}
+
+.custom-slider .slick-next {
+  right: -10px;
+}
+
+/* Nutrition Progress styling */
+.nutritionProgressContainer {
+  margin-bottom: 30px;
+}
+
+.nutritionProgressContainer h3 {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 24px;
+  color: #28511D;
+  margin-bottom: 15px;
+}
+
+.nutritionProgressContainer > div {
+  width: 300px !important;
+  height: 300px !important;
+  margin: 0 auto;
+}
+
+.nutrition-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.nutrition-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.meal-summary {
+  margin-bottom: 20px;
+}
+
+.nutrition-summary {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Loader styling */
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.custom-slider .slick-list {
+  touch-action: pan-y;
+}
+
+.custom-slider .today-slide::after {
+  content: "Сегодня";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #CEE422;
+  color: #28511D;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.8em;
+  z-index: 2;
+}
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+  .introContainer {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .introContainer h2 {
+    font-size: 60px;
+  }
+
+  .gridContainer2 {
+    flex-direction: column;
+  }
+
+  .gridContainer-item {
+    width: 100%;
+  }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .custom-slider .today-slide::after {
+    top: -15px;
+    font-size: 0.7em;
+    padding: 100px 8px;
+  }
+  .font-rubick {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  h2.text-5xl {
+    font-size: 3xl; /* Adjust other font sizes for headings if necessary */
+  }
+
+  .w-full {
+    width: 100%;
+  }
+  .lg\:w-1\/2 {
+    width: 100%;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .m-auto {
+    margin: auto;
+  }
+
+  .mt-8 {
+    margin-top: 1rem;
+  }
+  .custom-slider .slick-list {
+    overflow: visible;
+  }
+
+  .custom-slider .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-slider .slick-slide {
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+  }
+
+  .custom-slider .slick-current,
+  .custom-slider .slick-center {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+  }
+  .custom-slider .today-slide::after {
+    content: "Сегодня";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #CEE422;
+    color: #28511D;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.7em;
+    z-index: 2;
+  }
+  .dayPlanCard {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-nav {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  
+  .introContainer h2 {
+    font-size: 40px;
+  }
+
+  .introContainer h4 {
+    font-size: 18px;
+  }
+
+  .inputContainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .inputContainer button {
+    width: 100%;
+  }
+
+  .custom-slider .slick-prev {
+    left: -20px;
+  }
+
+  .custom-slider .slick-next {
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-container {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+  .custom-slider .today-slide::after {
+    top: -12px;
+    font-size: 0.6em;
+    padding: 1px 6px;
+  }
+
+  .dayPlanCard {
+    min-height: 350px;
+  }
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+  
+  .header-nav1, .header-nav2 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .introContainer h2 {
+    font-size: 30px;
+  }
+
+  .introContainer h4 {
+    font-size: 16px;
+    width: 100%;
+  }
+  .font-rubick2{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+  font-style: normal;
+  color: #28511D;
+
+  }
+}
