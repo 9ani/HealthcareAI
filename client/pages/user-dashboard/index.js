@@ -20,6 +20,7 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import Footer from "../../components/Footer";
+import Chatbot from "../../components/Chatbot";
 
 const Accordion = styled(MuiAccordion)(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
@@ -636,6 +637,8 @@ const UserDashboard = () => {
         setHasJustSignedOut={setHasJustSignedOut}
       />
       <Footer hasWeekPlan={weekPlan} />
+      <Chatbot userId={user? user.id: null}/>
+
     </div>
   );
 };
