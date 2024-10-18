@@ -48,7 +48,9 @@ const Header = ({
   const handleSignUp = () => {
     router.push("/sign-up");
   };
-
+  const handlePersonalTrainerClick = () => {
+    router.push("/personal-trainer");
+  };
   const handleHistoryClick = () => {
     router.push("/history");
   };
@@ -66,7 +68,7 @@ const Header = ({
       window.location.href = "/";
     } catch (error) {
       console.error("Error during sign out:", error);
-    }
+    } 
   };
 
   const handleEatInCafeClick = async () => {
@@ -330,6 +332,9 @@ const Header = ({
                 <button onClick={handleHistoryClick} className={buttonStyle}>
                   История
                 </button>
+                <button onClick={handlePersonalTrainerClick} className={buttonStyle}>
+                  Тренер
+                </button>
                 <button
                   onClick={handleEatInCafeClick}
                   className={`${buttonStyle} ${
@@ -445,6 +450,10 @@ const Header = ({
                 >
                   История
                 </button>
+                <button onClick={handlePersonalTrainerClick} className="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-200">
+                  Тренер
+                  </button>
+
                 <button
                   onClick={handleEatInCafeClick}
                   className={`bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-200 ${
