@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         "custom-green": "#28511D",
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
