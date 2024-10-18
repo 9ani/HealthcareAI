@@ -540,7 +540,7 @@ const scrapeTextMenuFromRhwe01 = async (placeId: string) => {
 };
 
 const scrapeTextMenuFrom8mqv20 = async (placeId: string) => {
-  const url = `https://2gis.kz/almaty/firm/${placeId}/tab/prices`;
+  const url = `https://2gis.kz/firm/${placeId}/tab/prices`;
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 

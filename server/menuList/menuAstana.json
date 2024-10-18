@@ -16357,7 +16357,9 @@
     "parsedImages": [
       "https://i3.photo.2gis.com/images/branch/0/30258560104823087_8bc8_656x340.jpg"
     ],
-    "parsedMenu": [""]
+    "parsedMenu": [
+      ""
+    ]
   },
   {
     "id": "70000001084128546",
@@ -20932,7 +20934,9 @@
     "parsedImages": [
       "https://i8.photo.2gis.com/photo-gallery/3b7ab586-e832-45c0-b46b-b8b7da91f1b0_656x340.jpg"
     ],
-    "parsedMenu": ["The dish is a waffle with blueberries and chocolate chips."]
+    "parsedMenu": [
+      "The dish is a waffle with blueberries and chocolate chips."
+    ]
   },
   {
     "id": "70000001075431026",
@@ -49580,6 +49584,24 @@
   {
     "id": "70000001083690116",
     "name": "Я с тобой ",
+    "parsedImages": [],
+    "parsedMenu": []
+  },
+  {
+    "id": "70000001029643904",
+    "name": "Leprechaun, ирландский паб",
+    "parsedImages": [],
+    "parsedMenu": []
+  },
+  {
+    "id": "70000001028263064",
+    "name": "Ocean Basket, ресторан морепродуктов",
+    "parsedImages": [],
+    "parsedMenu": []
+  },
+  {
+    "id": "70000001051036239",
+    "name": "Paul",
     "parsedImages": [],
     "parsedMenu": []
   }
