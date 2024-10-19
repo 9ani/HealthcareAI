@@ -16,8 +16,8 @@ const SportProgress = ({ progress = 50, date }) => {
       <div className="ml-16 w-full max-w-md mx-auto flex justify-center">
         <div className="w-40">
           <Flat
-            progress={50}
-            text="Match"
+            progress={progressValue}
+            text=""
             showMiniCircle={false}
             sx={{
               strokeColor: "#16a34a",
@@ -26,6 +26,7 @@ const SportProgress = ({ progress = 50, date }) => {
               textSize: 20,
               strokeLinecap: "square",
               barWidth: 5,
+              valueAnimation: false,
             }}
           />
         </div>
