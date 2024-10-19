@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 
 const SportHeader = () => {
     const router = useRouter();
+    
+    const [clickedButton, setClickedButton] = useState(null); // Track button clicks
+
     const buttonStyle = "bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors duration-200";
     const highlightedButtonStyle = "bg-[#CEE422] text-black px-4 py-2 rounded hover:bg-[#DAF23D] transition-colors duration-200";
 
     const handleSignIn = () => {
-        router.push("/sign-in");
+        router.push({
+            pathname: "/sign-in",
+            query: { from: clickedButton },
+        });
     };
 
     const handleSignUp = () => {
-        router.push("/sign-up");
+        router.push({
+            pathname: "/sign-up",
+            query: { from: clickedButton },
+        });
     };
 
     const handleHelpClick = () => {
@@ -24,18 +33,20 @@ const SportHeader = () => {
     };
 
     const handleSportClick = () => {
+        setClickedButton('fitness');  
         router.push("/personal-trainer");
     };
 
     const handleNutritionClick = () => {
-        router.push("/");
+        setClickedButton('nutrition');  
+        router.push("/user-dashboard");
     };
 
     return (
         <header className="bg-gray-300 mx-4 md:mx-12 rounded-full h-auto md:h-20 relative flex items-center justify-between px-4 md:px-6 py-2">
             <div className="flex items-center gap-4">
                 <Image
-                    src="/images/logo1.png" 
+                    src="/images/logo1.png"
                     alt="logo"
                     width={70}
                     height={64}
@@ -47,9 +58,6 @@ const SportHeader = () => {
                 <SignedIn>
                     <button onClick={handleNutritionClick} className={highlightedButtonStyle}>
                         Питание
-                    </button>
-                    <button onClick={handleSportClick} className={buttonStyle}>
-                        Фитнес
                     </button>
                     <UserButton />
                 </SignedIn>
@@ -69,8 +77,8 @@ const SportHeader = () => {
                     <button onClick={handleSignUp} className={buttonStyle}>
                         Регистрация
                     </button>
-                    <button onClick={handleSportClick} className={buttonStyle}>
-                        Фитнес
+                    <button onClick={handleNutritionClick} className={buttonStyle}>
+                        Питание
                     </button>
                 </SignedOut>
             </nav>

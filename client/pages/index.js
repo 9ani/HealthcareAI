@@ -11,11 +11,22 @@ const IndexPage = () => {
     const [showAuthModal, setShowAuthModal] = useState(false);
     const { isSignedIn, user } = useUser();
     const router = useRouter();
+    const { from } = router.query;
+
     useEffect(() => {
         if (isSignedIn) {
-            router.push("/user-dashboard");
+            if (from === 'fitness') {
+                router.push("/personal-trainer");
+            } else if (from === 'nutrition') {
+                router.push("/user-dashboard");
+            }
+            else {
+                router.push("/user-dashboard")
+            }
         }
-    }, [isSignedIn, router]);
+    }, [isSignedIn, router, from]);
+
+
     const handleButtonClick = () => setModalIsOpen(true);
 
     return (
