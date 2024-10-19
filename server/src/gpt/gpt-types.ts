@@ -177,7 +177,17 @@ const userSchema = new Schema({
   dietaryPreferences: { type: [String], default: [] },
   goals: { type: String, default: "" },
   physicalActivity: { type: String, default: "" },
-  goalCompletionTime: { type: String, default: "" }
+  goalCompletionTime: { type: String, default: "" },
+  dayNumber: {
+    type: Number,
+    default: 1,
+    min: 1,
+    max: 7
+  },
+  lastUpdateDate: {
+    type: Date,
+    default: Date.now
+  }
 }, { timestamps: true });
 
 // Avoid OverwriteModelError by checking if the model already exists
