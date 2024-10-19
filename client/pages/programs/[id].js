@@ -94,22 +94,21 @@ const SportsProgramsPage = () => {
               total: 39,
             },
           },
-          recommendations: [
-            {
-              name: "Жим штанги",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=barbell_press_example",
-            },
-            {
-              name: "Жим гантелей",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=dumbbell_press_example",
-            },
-            {
-              name: "Выпады",
-              youtubeLink: "https://www.youtube.com/watch?v=lunges_example",
-            },
-          ],
+          recommendations: [ 
+            { 
+              "name": "Жим штанги", 
+              "youtubeLink": "https://www.youtube.com/watch?v=Jb2bMaxqnXI&ab_channel=IlyaGeneralov" 
+            }, 
+            { 
+              "name": "Жим гантелей", 
+              "youtubeLink": "https://www.youtube.com/watch?v=CjHIKDQ4RQo&ab_channel=PureGym" 
+            }, 
+            { 
+              "name": "Выпады", 
+              "youtubeLink": "https://www.youtube.com/watch?v=xqvCmoLULNY&ab_channel=XHITDaily" 
+            } 
+          ], 
+    
           motto: "Сила приходит через усилие — каждый шаг приближает к цели.",
         },
         {
@@ -132,20 +131,21 @@ const SportsProgramsPage = () => {
               total: 36,
             },
           },
-          recommendations: [
-            {
-              name: "Приседания",
-              youtubeLink: "https://www.youtube.com/watch?v=squats_example",
-            },
-            {
-              name: "Жим ногами",
-              youtubeLink: "https://www.youtube.com/watch?v=legpress_example",
-            },
-            {
-              name: "Тяга",
-              youtubeLink: "https://www.youtube.com/watch?v=deadlift_example",
-            },
-          ],
+          recommendations:  [ 
+            { 
+              "name": "Приседания", 
+              "youtubeLink": "https://www.youtube.com/watch?v=gml-R27ufas&ab_channel=hiitworks" 
+            }, 
+            { 
+              "name": "Жим ногами", 
+              "youtubeLink": "https://www.youtube.com/watch?v=vWc9aKZHETo&ab_channel=IlyaGeneralov" 
+            }, 
+            { 
+              "name": "Тяга", 
+              "youtubeLink": "https://www.youtube.com/watch?v=D3E6BEuROfM&ab_channel=IlyaGeneralov" 
+            } 
+          ], 
+    
           motto: "Каждое усилие приближает к успеху.",
         },
         {
@@ -168,21 +168,20 @@ const SportsProgramsPage = () => {
               total: 36,
             },
           },
-          recommendations: [
-            {
-              name: "Планка",
-              youtubeLink: "https://www.youtube.com/watch?v=plank_example",
-            },
-            {
-              name: "Русские скручивания",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=russian_twists_example",
-            },
-            {
-              name: "Подъемы ног",
-              youtubeLink: "https://www.youtube.com/watch?v=leg_raises_example",
-            },
-          ],
+          recommendations: [ 
+            { 
+              "name": "Планка", 
+              "youtubeLink": "https://www.youtube.com/watch?v=0JtBS11DGDk&ab_channel=%D0%AE%D1%80%D0%B8%D0%B9%D0%A5%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%BE%D0%B2" 
+            }, 
+            { 
+              "name": "Русские скручивания", 
+              "youtubeLink": "https://www.youtube.com/watch?v=Ewi4dQEMTR8&ab_channel=MistySanders" 
+            }, 
+            { 
+              "name": "Подъемы ног", 
+              "youtubeLink": "https://www.youtube.com/watch?v=ch-iFMEV2XE&ab_channel=%D0%A4%D0%B8%D1%82%D0%BD%D0%B5%D1%81MORGAN" 
+            } 
+          ],     
           motto: "Стабильность — это основа силы.",
         },
         {
@@ -205,21 +204,19 @@ const SportsProgramsPage = () => {
               total: 36,
             },
           },
-          recommendations: [
-            {
-              name: "Подтягивания",
-              youtubeLink: "https://www.youtube.com/watch?v=pullups_example",
-            },
-            {
-              name: "Тяга штанги",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=barbell_rows_example",
-            },
-            {
-              name: "Сгибания на бицепс",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=bicep_curls_example",
-            },
+          recommendations: [ 
+            { 
+              "name": "Подтягивания", 
+              "youtubeLink": "https://www.youtube.com/watch?v=EkpJkHpJXmM&ab_channel=BulldogGear" 
+            }, 
+            { 
+              "name": "Тяга штанги", 
+              "youtubeLink": "https://www.youtube.com/watch?v=D3E6BEuROfM&ab_channel=IlyaGeneralov" 
+            }, 
+            { 
+              "name": "Сгибания на бицепс", 
+              "youtubeLink": "https://www.youtube.com/watch?v=H_JMAU1NKB8&ab_channel=%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%9F%D0%BE%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE" 
+            } 
           ],
           motto: "Каждый подъем приближает к вершине.",
         },
@@ -243,23 +240,21 @@ const SportsProgramsPage = () => {
               total: 39,
             },
           },
-          recommendations: [
-            {
-              name: "Разгибания ног",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=leg_extensions_example",
-            },
-            {
-              name: "Подъемы на икры",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=calf_raises_example",
-            },
-            {
-              name: "Ягодичный мостик",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=glute_bridge_example",
-            },
-          ],
+          recommendations: [ 
+            { 
+              "name": "Разгибания ног", 
+              "youtubeLink": "https://www.youtube.com/watch?v=1mgV0E5jIbs&ab_channel=GeographyFitness" 
+            }, 
+            { 
+              "name": "Подъемы на икры", 
+              "youtubeLink": "https://www.youtube.com/watch?v=-5mLbj55tq0&ab_channel=%D0%9A%D1%83%D0%B7%D0%BD%D0%B8%D1%86%D0%B0%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B0" 
+            }, 
+            { 
+              "name": "Ягодичный мостик", 
+              "youtubeLink": "https://www.youtube.com/watch?v=c-Zi3jSpZj4&ab_channel=IlyaGeneralov" 
+            } 
+          ], 
+    
           motto: "Сильные ноги — основа движения.",
         },
         {
@@ -282,22 +277,21 @@ const SportsProgramsPage = () => {
               total: 45,
             },
           },
-          recommendations: [
-            {
-              name: "Скручивания",
-              youtubeLink: "https://www.youtube.com/watch?v=situps_example",
-            },
-            {
-              name: "Велосипед",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=bicycle_crunches_example",
-            },
-            {
-              name: "Горные альпинисты",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=mountain_climbers_example",
-            },
-          ],
+          recommendations: [ 
+            { 
+              "name": "Скручивания", 
+              "youtubeLink": "https://www.youtube.com/watch?v=guydPuiirkU&ab_channel=%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%9C%D1%96%D0%BB%D1%8E%D0%BA%D0%BE%D0%B2" 
+            }, 
+            { 
+              "name": "Велосипед", 
+              "youtubeLink": "https://www.youtube.com/watch?v=jUAKMd42jqs&ab_channel=MakeFitness" 
+            }, 
+            { 
+              "name": "Горные альпинисты", 
+              "youtubeLink": "https://www.youtube.com/watch?v=RfdqSn4Mono&ab_channel=Forma24" 
+            } 
+          ], 
+    
           motto: "Каждое движение делает тебя сильнее.",
         },
         {
@@ -320,22 +314,21 @@ const SportsProgramsPage = () => {
               total: 36,
             },
           },
-          recommendations: [
-            {
-              name: "Бёрпи",
-              youtubeLink: "https://www.youtube.com/watch?v=burpees_example",
-            },
-            {
-              name: "Махи гирей",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=kettlebell_swings_example",
-            },
-            {
-              name: "Прыжки в приседе",
-              youtubeLink:
-                "https://www.youtube.com/watch?v=jump_squats_example",
-            },
-          ],
+          recommendations: [ 
+            { 
+              "name": "Бёрпи", 
+              "youtubeLink": "https://www.youtube.com/watch?v=50-0F_gQHFI&ab_channel=%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D0%91%D1%83%D0%BA%D1%80%D0%B5%D0%B9%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81%D0%B8%D0%B7%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5" 
+            }, 
+            { 
+              "name": "Махи гирей", 
+              "youtubeLink": "https://www.youtube.com/watch?v=hfzBArkbshg&ab_channel=%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%9F%D0%BE%D0%BF%D0%B5%D0%BD%D0%BA%D0%BE" 
+            }, 
+            { 
+              "name": "Прыжки в приседе", 
+              "youtubeLink": "https://www.youtube.com/watch?v=afJ9rpt-MpQ&ab_channel=%D0%A0%D0%91%D0%9A%D0%97%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5" 
+            } 
+          ], 
+    
           motto: "Сила в движении, стремись к лучшему.",
         },
       ],
@@ -400,40 +393,53 @@ const SportsProgramsPage = () => {
             </div>
           )}
           {sportPlan.length > 0 && (
-            <div>
-              <h2 className={`text-4xl font-bold text-custom-green  mb-4`}>
-                Рекомендации:
-              </h2>
-              {sportPlan[currentDayIndex].recommendations.map(
-                (recommendation, index) => (
-                  <Accordion
-                    key={index}
-                    expanded={expanded === `panel${index + 1}`}
-                    onChange={handleAccordionChange(`panel${index + 1}`)}
-                  >
-                    <AccordionSummary
-                      aria-controls={`panel${index + 1}d-content`}
-                      id={`panel${index + 1}d-header`}
-                    >
-                      <Typography>{recommendation.name}</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                        Рекомендация:{" "}
-                        <a
-                          href={recommendation.youtubeLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {recommendation.name}
-                        </a>
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                )
-              )}
-            </div>
-          )}
+  <div>
+    <h2 className={`text-4xl font-bold text-custom-green mb-4 mt-4`}>
+      Видеоуроки по программе на {sportPlan[currentDayIndex].day}:
+    </h2>
+    {sportPlan[currentDayIndex].recommendations.map(
+      (recommendation, index) => {
+        // Extract the video ID from the YouTube link
+        const videoId = recommendation.youtubeLink.split('v=')[1]?.split('&')[0];
+
+        return (
+          <Accordion
+            key={index}
+            expanded={expanded === `panel${index + 1}`}
+            onChange={handleAccordionChange(`panel${index + 1}`)}
+          >
+            <AccordionSummary
+              aria-controls={`panel${index + 1}d-content`}
+              id={`panel${index + 1}d-header`}
+            >
+              <Typography>{recommendation.name}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Рекомендация:{" "}
+                {videoId ? (
+                  // Embed YouTube video using iframe
+                  <iframe
+                    width="100%"
+                    height="400px"
+                    src={`https://www.youtube.com/embed/${videoId}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={recommendation.name}
+                  />
+                ) : (
+                  <span>Видео недоступно</span>
+                )}
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        );
+      }
+    )}
+  </div>
+)}
+
         </div>
         <div className="w-full md:w-1/2">
           <div className="relative w-full px-4 md:px-10">
