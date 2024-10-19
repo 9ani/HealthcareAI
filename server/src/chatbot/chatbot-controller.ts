@@ -34,7 +34,7 @@ User Info:
 - Activity Level: {physicalActivity}
 - Goal Timeframe: {goalCompletionTime}
 
-Focus on questions about nutrition, diet, fitness, and related health topics. If a query is outside these areas, remind the user to ask relevant questions. Always provide responses considering the user's personal data and health objectives. Strongly shorten the message, maximum 40 words`;
+Focus on questions about nutrition, diet, fitness, and related health topics. If a query is outside these areas, remind the user to ask relevant questions. Always provide responses considering the user's personal data and health objectives. Strongly shorten the message, maximum 40 words. If the user's language is Russian, answer ONLY in Russian. Else, if user writes in English, answer in ENGLISH.`;
 
       // Send message, userJson, and systemPrompt to chatbot service
       const reply = await this.chatbotService.getReply({
