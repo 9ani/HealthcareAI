@@ -5,9 +5,9 @@
 //   return (
 //     <div>
 //       <Modal />
-      
+
 //       <Component {...pageProps} />
-      
+
 //     </div>
 //   )
 // }
@@ -19,12 +19,12 @@ import { ClerkProvider } from '@clerk/nextjs';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ClerkProvider>
-      <Component {...pageProps} />
-      <Analytics />
-    </ClerkProvider>
-  );
+    return (
+        <ClerkProvider>
+            <Component {...pageProps} />
+            <Analytics />
+        </ClerkProvider>
+    );
 }
 
 export default MyApp;
