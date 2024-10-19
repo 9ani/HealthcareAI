@@ -8,21 +8,21 @@ const SportProgress = ({ progress = 50, date }) => {
       ? parseFloat(progress.replace(/%/g, "").trim())
       : parseFloat(progress);
   return (
-    <div className="bg-gradient-to-br from-white to-green-50 p-8 rounded-2xl shadow-lg mb-8 transform hover:scale-105 transition-all duration-300">
-      <h3 className="text-[#28511D] text-3xl font-bold mb-6 text-center font-sans">
+    <div className="bg-[#3F3F3F] w-[350px] h-full text-[#3F3F3F] gradient-to-br from-white to-green-50 p-8 rounded-2xl shadow-lg mb-8 transform hover:scale-105 transition-all duration-300">
+      <h3 className="text-[#FFFFFF] text-3xl font-bold mb-6 text-center font-sans">
         {date}
       </h3>
 
-      <div className="w-full max-w-md mx-auto flex justify-center">
-        <div className="w-40 ">
+      <div className="ml-16 w-full max-w-md mx-auto flex justify-center">
+        <div className="w-40">
           <Flat
             progress={50}
             text="Match"
             showMiniCircle={progressValue}
             sx={{
-              strokeColor: "#111827",
+              strokeColor: "#D0E320",
               textSize: 20,
-              strokeLinecap: "square",
+              strokeLinecap: "round",
               barWidth: 10,
               loadingTime: 0,
               valueAnimation: false,
