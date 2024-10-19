@@ -48,9 +48,7 @@ const SportHeader = () => {
                     <button onClick={handleNutritionClick} className={highlightedButtonStyle}>
                         Питание
                     </button>
-                    <button onClick={handleSportClick} className={buttonStyle}>
-                        Фитнес
-                    </button>
+                    
                     <UserButton />
                 </SignedIn>
                 <SignedOut>
