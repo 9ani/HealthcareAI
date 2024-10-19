@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
@@ -14,6 +15,8 @@ const ExerciseModal = ({ isOpen, onClose, program, dayNumber, onUpdateProgress }
         return acc + (timeInMinutes * 60);
       }, 0);
       setTimeLeft(totalTime);
+      setCurrentProgress(0); // Reset progress when modal opens
+      setIsActive(false); // Reset timer state
     }
   }, [isOpen, program]);
 
@@ -53,6 +56,13 @@ const ExerciseModal = ({ isOpen, onClose, program, dayNumber, onUpdateProgress }
     setIsActive(!isActive);
   };
 
+  const handleClose = () => {
+    setIsActive(false);
+    setCurrentProgress(0);
+    onUpdateProgress(0);
+    onClose();
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -60,7 +70,7 @@ const ExerciseModal = ({ isOpen, onClose, program, dayNumber, onUpdateProgress }
       <div className="bg-white rounded-lg p-8 max-w-2xl w-full mx-4">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-green-800">Тренировка дня {dayNumber}</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+          <button onClick={handleClose} className="text-gray-500 hover:text-gray-700">
             <X size={24} />
           </button>
         </div>

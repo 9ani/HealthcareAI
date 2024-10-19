@@ -451,7 +451,29 @@ const SportsProgramsPage = () => {
       ],
     };
   };
+  const startExerciseSession = () => {
+    setIsModalOpen(true);
+    setProgress(0); // Reset progress when starting a new session
 
+    // Example timer to simulate progress
+    const interval = setInterval(() => {
+      setProgress((prev) => (prev >= 100 ? 100 : prev + 10));
+    }, 1000);
+
+    // Clear interval when modal is closed or progress is completed
+    setTimeout(() => clearInterval(interval), 10000);
+  };
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setProgress(0); // Reset progress when closing the modal
+  };
+
+  const handleCardClick = (index) => {
+    setCurrentDayIndex(index);
+    if (index !== userDayNumber - 1) {
+      setProgress(0); // Reset progress if switching to any day other than today
+    }
+  };
   const sliderRef = useRef(null);
   const SamplePrevArrow = (props) => {
     const { className, style, onClick } = props;
@@ -550,6 +572,7 @@ const SportsProgramsPage = () => {
                 <SportProgress
                   progress={progress}
                   date={sportPlan[currentDayIndex].day}
+                  isToday={currentDayIndex === userDayNumber - 1}
                 />
               </div>
               {currentDayIndex === userDayNumber - 1 && (
