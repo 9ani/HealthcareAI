@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
-"@alptugidin/react-circular-progress-bar@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@alptugidin/react-circular-progress-bar/-/react-circular-progress-bar-1.1.2.tgz#dc55d612780949566374e690ad07a092d01f2e6d"
-  integrity sha512-QfrUrf25PB6Aj5mPQAjd0yGtzuA5WqdYvcJMhxSHTvERDOzoQZzm3dxZ5wkWxyynZkhtQEkyQR3rKnKn0NTaRQ==
+"@alptugidin/react-circular-progress-bar@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@alptugidin/react-circular-progress-bar/-/react-circular-progress-bar-1.1.4.tgz#057bd5484d2d6bd335841e90f176bfd80b56c4af"
+  integrity sha512-C8JII3yhdvcXZFN9cRTTIpL6Ug53e7qEk3/F7QMEI89rFKTn35hU1ryAmP58BnegZTRw7qg24cqf3q7N8P7E4g==
 
 "@ant-design/colors@^7.0.0", "@ant-design/colors@^7.0.2":
   version "7.1.0"
