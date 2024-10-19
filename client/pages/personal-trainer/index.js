@@ -3,7 +3,6 @@ import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/router";
 import ModalComponent from "../../components/Modal";
 import Image from "next/image";
-import Footer from "../../components/Footer";
 import SportHeader from "../../components/SportHeader";
 
 const IndexPage = () => {
