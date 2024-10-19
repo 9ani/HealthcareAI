@@ -14,7 +14,7 @@ const ProgramDayPlanCard = ({ dayPlan }) => {
           {dayPlan.day} - {dayPlan.motto}
         </h3>
         <div className="flex-grow overflow-auto mb-6 pr-2 custom-scrollbar">
-          <h4 className="font-bold mb-3 text-lg text-green-700">Упражнения:</h4>
+          <h4 className="font-bold mb-3 text-lg text-[#D0E320]">Фокус:</h4>
           <ul className="list-none">
             {Object.entries(dayPlan.program).map(([key, exercise]) => (
               <li key={key} className="mb-2 pl-4 border-l-4 border-green-500">
