@@ -18,14 +18,14 @@ const SportProgress = ({ progress = 50, date }) => {
           <Flat
             progress={50}
             text="Match"
-            showMiniCircle={progressValue}
+            showMiniCircle={false}
             sx={{
-              strokeColor: "#D0E320",
+              strokeColor: "#16a34a",
+              bgStrokeColor: "#dadada",
+              bgColor: { value: "#000000", transparency: "40" },
               textSize: 20,
-              strokeLinecap: "round",
-              barWidth: 10,
-              loadingTime: 0,
-              valueAnimation: false,
+              strokeLinecap: "square",
+              barWidth: 5,
             }}
           />
         </div>
