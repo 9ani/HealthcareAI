@@ -16,6 +16,7 @@ import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import Footer from "../../components/Footer";
 import Chatbot from "../../components/Chatbot";
+import SportHeader from "../../components/SportHeader";
 
 const Accordion = styled(MuiAccordion)(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
@@ -378,7 +379,7 @@ const SportsProgramsPage = () => {
 
   return (
     <div className="bg-white pt-12 pb-12 min-h-screen flex flex-col">
-      <Header />
+      <SportHeader />
       <div className="flex flex-col md:flex-row gap-4 md:gap-12 px-4 md:px-12 mt-8 md:mt-24 flex-grow">
         <div className="w-full md:w-1/2">
           {sportPlan.length > 0 && (
